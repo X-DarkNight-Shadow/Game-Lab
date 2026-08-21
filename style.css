@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    color: lightblue;
+    text-align: center;
+    text-shadow: 0px 0px 5px lightblue;
+    transition: all 0.5s;
+}
+hr{
+    background-color: lightblue;
+    border: solid 3px lightblue;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px lightblue;
+    margin-bottom: 100px;
+}
+
+.Game-Container {
+    background-color: rgb(15, 14, 14);
+    margin: auto;
+    width: 70vw;
+    height: 70vh;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px lightblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    animation-name: Flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Flash {
+    from {box-shadow: 0px 0px 20px lightblue;}
+    to {box-shadow: 0px 0px 0px lightblue;}
+}
+
+.Game-Container .Game {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(9, 9, 9);
+    border: solid 2px rgb(7, 7, 7);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.Game-Container .Game:hover {
+    border: solid 2px lightblue;
+}
+
+.Game-Container .Game:hover .Title p{
+    color: lightblue;
+}
+
+.Game-Container .Game .Picture img{
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.Game-Container .Game .Title{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.Game-Container .Game .Title p{
+    color: rgb(216, 209, 209);
+    text-shadow: none;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+}
