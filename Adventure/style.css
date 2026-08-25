@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+#Title {
+    color: yellow;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 3em;
+}
+
+.canvasWrapper {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#GameCanvas {
+    width: 80vw;
+    height: 60vw;
+    max-width: 960px;
+    max-height: 720px;
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#Back {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Back button {
+    width: 100px;
+    height: 28px;
+    padding: 0;
+    font-size: 15px;
+    color: lightblue;
+    background: #3a3a3a;
+    border-radius: 6px;
+    text-shadow: 0 0 5px lightblue;
+}

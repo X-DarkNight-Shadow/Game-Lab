@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: lightblue;
+    text-align: center;
+    text-shadow: 0px 0px 5px lightblue;
+}
+hr{
+    background-color: lightblue;
+    height: 2px;
+    border: none;
+}
+button{
+    color: lightblue;
+    background-color: grey;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-shadow: 0px 0px 5px lightblue;
+}
+input{
+    text-align: center;
+    font-size: 25px;
+    color: lightblue;
+    background-color:  grey;
+    border: none;
+    border-radius: 10px;
+}
+#history{
+    text-align: center;
+    margin: auto;
+    border: solid 3px lightblue;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+}
+#Konto{
+    font-size: 25px;
+}
+#Back{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}

@@ -1,0 +1,161 @@
+* {
+    transition: all 0.5s;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+body h1 {
+    font-size: 4em;
+}
+
+.Main {
+    background-color: lightblue;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .Section {
+    width: 33%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.Main .Section.S1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.circle {
+    border-radius: 100%;
+    background-color: hsl(0, 100%, 49%);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 100px red;
+    border: solid 2px brown;
+}
+
+.circle2 {
+    border-radius: 100%;
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 100px blue;
+    font-size: 0.7em;
+}
+
+.Main .Section.S2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .Section.S3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .Section.S3 button{
+    border: none;
+    padding: 10px;
+    color: black;
+    font-size: 2em;
+    border-radius: 100%;
+    background-color: black;
+    font-weight: bold;
+}
+
+.Main .Section.S3 button:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.Main .Section.S3 button:active{
+    background-color: red;
+}
+
+.Wrapper1 {
+    background-color: blue;
+    border-radius: 20px;
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+    color: white;
+    box-shadow: 0px 0px 25px white;
+}
+
+.Wrapper2 {
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Main .Section.S2 .Wrapper1 .Wrapper2 button {
+    background-color: blue;
+    color: white;
+    border: none;
+    margin: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 15px;
+    width: 5vw;
+}
+
+.Main .Section.S2 .Wrapper1 .Wrapper2 button:hover {
+    transform: scale(1.2);
+}
+
+.Main .Section.S2 .Wrapper1 .Wrapper2 input {
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 100px;
+    width: 80%;
+    text-align: center;
+    border: solid 2px black;
+}
+
+#Back {
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+}
+
+#Back button {
+    width: 100px;
+    height: 28px;
+    padding: 0;
+    font-size: 15px;
+    color: lightblue;
+    background: #3a3a3a;
+    border-radius: 6px;
+    text-shadow: 0 0 5px lightblue;
+}
