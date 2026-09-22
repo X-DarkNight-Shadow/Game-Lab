@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Goldman;
+    src: url(Fonts/Goldman-Regular.ttf);
+}
+
+body{
+    background-image: radial-gradient(circle,rgb(9, 255, 0) 10%, rgb(0, 0, 0) 90%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#Title{
+    color: rgb(9, 255, 0);
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Goldman;
+}
+
+button:not([id="Back-button"]){
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 100px;
+    font-family: Goldman;
+    background-color: #3a3a3a;
+    color: rgb(9, 255, 0);
+    border: black 3px solid;
+    font-size: 2em;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0px 0px 20px rgb(9, 255, 0);
+}
+
+button:not([id="Back-button"]):hover{
+    transform: scale(1.1);
+}
+
+button:not([id="Back-button"]):active{
+    transform: scale(0.5);
+}
+
+#Back {
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+}
+
+#Back button {
+    width: 100px;
+    height: 28px;
+    padding: 0;
+    font-size: 15px;
+    color: lightblue;
+    background: #3a3a3a;
+    border-radius: 6px;
+    text-shadow: 0 0 5px lightblue;
+}
+
+#Back button:hover {
+    background: lightblue;
+    color: black;
+}

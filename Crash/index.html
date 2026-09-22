@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Pictures/favicon.webp">
+</head>
+<body>
+    <h1>Crash</h1>
+
+    <diV class="Main">
+        <div class="Section S1">
+            <div class="circle2">
+                <h1 id="CrashDisplay">0x</h1>
+            </div>
+        </div>
+        <div class="Section S2">
+            <div class="Wrapper1">
+                <h2>Konto</h2>
+                <h2 id="CrashMoneyDisplay">100</h2>
+
+                <div class="Wrapper2">
+                    <h2 id="CrashSetMoney">0</h2>
+                    <input type="number" min="0" id="CrashSetInput">
+                    <button id="crashSetButton" onclick="setting();">Set</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="Section S3">
+            <button id="CrashControll" onclick="Controll();">
+                <div class="circle">
+                    <p id="CrashControllState">Start</p>
+                </div>
+            </button>
+        </div>
+
+    </diV>
+
+    <div id="Back">
+        <a href="../index.html">
+            <button>Back</button>
+        </a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

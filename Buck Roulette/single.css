@@ -1,0 +1,302 @@
+@font-face {
+    font-family: Goldman;
+    src: url(Fonts/Goldman-Regular.ttf);
+}
+
+body{
+    background-image: radial-gradient(circle,rgb(9, 255, 0) 10%, rgb(0, 0, 0) 90%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#Title{
+    color: rgb(9, 255, 0);
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Goldman;
+}
+
+
+
+/*Health*/ 
+
+.Health-box{
+    position: fixed;
+    left: 10px;
+    background-color: rgb(36, 35, 35);
+    padding: 50px;
+    border-radius: 15px;
+    width: 400px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Health-box.t{
+    bottom: 10px;
+}
+
+.Health-box.f{
+    bottom: -300px;
+}
+
+.Health-box .Health-box-2{
+    background-image: url(Picturs/Heart-background.webp);
+    background-position: center;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Health-box .Health-box-2 .Health {
+    margin: 10px;
+}
+
+.beat{
+    animation: Heart-beat 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes Heart-beat {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+
+
+/*NPC-Health*/ 
+
+.NPC-Health-box{
+    position: fixed;
+    left: 10px;
+    background-color: rgb(36, 35, 35);
+    padding: 50px;
+    border-radius: 15px;
+    width: 400px;
+    transition: all 0.5s ease-in-out;
+}
+
+.NPC-Health-box.t{
+    top: 10px;
+}
+
+.NPC-Health-box.f{
+    top: -300px;
+}
+
+.NPC-Health-box .NPC-Health-box-2{
+    background-image: url(Picturs/Heart-background.webp);
+    background-position: center;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NPC-Health-box .NPC-Health-box-2 .NPC-Health {
+    margin: 10px;
+}
+
+.NPC-beat{
+    animation: NPC-Heart-beat 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes NPC-Heart-beat {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+
+
+/*Monition*/ 
+
+.Wrapper-Move-Monition{
+    position: fixed;
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.Wrapper-Move-Monition.t{
+    right: 10px;
+}
+
+.Wrapper-Move-Monition.f{
+    right: -300px;
+}
+
+.Monition-box{
+    background-color: rgb(36, 35, 35);
+    width: 200px;
+    height: 80vh;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.Monition-box-2{
+    background-color: rgb(30, 70, 27);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Monition-box-2 img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Monition-box-2 img.Monition{
+    content: url(Picturs/Munition.png);
+}
+
+.Monition-box-2 img.Platzpatrone{
+    content: url(Picturs/Platzpatrone.png);
+}
+
+
+
+/*Item-box*/ 
+
+.Item-box{
+    position: fixed;
+    background-color: rgb(36, 35, 35);
+    width: 400px;
+    height: 550px;
+    padding: 0px 50px 50px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Item-box.t{
+    bottom: 50px;
+}
+
+.Item-box.f{
+    bottom: -600px;
+}
+
+.Item-box h1{
+    text-align: center;
+    color: white;
+}
+
+.Item-box .Item-box-2{
+    background-color: rgb(30, 70, 27);
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Item-box .Item-box-2 hr{
+    width: 380px;
+    background-color: rgb(16, 37, 15);
+    border: rgb(16, 37, 15) 3px solid;
+    border-radius: 100px;
+}
+
+.Item-box .Item-box-2 * {
+    margin: 6px;
+}
+
+.Item-box .Item-box-2 .Item-row{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Goldman;
+    color: white;
+}
+
+
+
+/*NPC-Item-box*/ 
+
+.NPC-Item-box{
+    position: fixed;
+    background-color: rgb(36, 35, 35);
+    width: 400px;
+    height: 550px;
+    padding: 0px 50px 50px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.NPC-Item-box.t{
+    top: 50px;
+}
+
+.NPC-Item-box.f{
+    top: -600px;
+}
+
+.NPC-Item-box h1{
+    text-align: center;
+    color: white;
+}
+
+.NPC-Item-box .NPC-Item-box-2{
+    background-color: rgb(30, 70, 27);
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.NPC-Item-box .NPC-Item-box-2 hr{
+    width: 380px;
+    background-color: rgb(16, 37, 15);
+    border: rgb(16, 37, 15) 3px solid;
+    border-radius: 100px;
+}
+
+.NPC-Item-box .NPC-Item-box-2 * {
+    margin: 6px;
+}
+
+.NPC-Item-box .NPC-Item-box-2 .NPC-Item-row{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Goldman;
+    color: white;
+}
+
+
+
+/*Back*/ 
+
+#Back {
+    position: fixed;
+    bottom: 8px;
+}
+
+#Back button {
+    width: 100px;
+    height: 28px;
+    padding: 0;
+    font-size: 15px;
+    color: lightblue;
+    background: #3a3a3a;
+    border-radius: 6px;
+    text-shadow: 0 0 5px lightblue;
+}
+
+#Back button:hover {
+    background: lightblue;
+    color: black;
+}
