@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Pickaxe</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: #080808;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Rotating container */
+        .orbit {
+            position: absolute;
+            width: 4000px;
+            height: 4000px;
+            animation: spin 10s linear infinite;
+        }
+
+        /* Glowing balls */
+        .glow {
+            position: absolute;
+            width: 1500px;
+            height: 1500px;
+            border-radius: 50%;
+            filter: blur(90px);
+        }
+
+        .blue {
+            background: #0055ff;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .yellow {
+            background: #f2ff00;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            position: fixed;
+            z-index: 10;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        #Back {
+            position: fixed;
+            bottom: 8px;
+            left: 8px;
+        }
+
+        #Back button {
+            width: 100px;
+            height: 28px;
+            padding: 0;
+            font-size: 15px;
+            color: lightblue;
+            background: #3a3a3a;
+            border-radius: 6px;
+            text-shadow: 0 0 5px lightblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="orbit">
+        <div class="glow blue"></div>
+        <div class="glow yellow"></div>
+    </div>
+    
+
+    <h1>Congratulations! You managed to beat the game!</h1>
+
+
+    <div id="Back">
+        <a href="../index.html">
+            <button>Back</button>
+        </a>
+    </div>
+</body>
+</html>

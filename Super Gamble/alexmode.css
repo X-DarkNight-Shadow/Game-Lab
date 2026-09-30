@@ -1,0 +1,40 @@
+#AlexModeBox{
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    transform: none;
+    z-index: 999999;
+    text-align: center;
+    border: solid 2px lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    width: 17%;
+    scrollbar-color: rgb(25, 25, 25) rgb(76, 76, 76);
+    background-image: linear-gradient(to bottom, rgb(35, 35, 35), rgb(14, 14, 14));
+    box-shadow: 0px 1px 5px #AAAA;
+    overflow: auto;
+}
+.InputA {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #555;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: red;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.InputA:checked {
+  background-color: lightgreen;
+  border-color: lightgreen;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.LabelA {
+    text-align: left;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
