@@ -1,0 +1,22 @@
+.loading-block{
+    margin: auto;
+}
+
+.loading-block img { 
+  width: 100%; 
+  animation: spin 0.6s linear infinite; 
+} 
+
+@keyframes spin {
+  0%   { transform: rotateZ(0deg); }
+  10%  { transform: rotateZ(10%); }
+  20%  { transform: rotateZ(20deg); }
+  30%  { transform: rotateZ(40deg); }
+  40%  { transform: rotateZ(80deg); }
+  50%  { transform: rotateZ(130deg); }
+  60%  { transform: rotateZ(160deg); }
+  70%  { transform: rotateZ(240deg); }
+  80%  { transform: rotateZ(300deg); }
+  90%  { transform: rotateZ(340deg); }
+  100% { transform: rotateZ(360deg); }
+}
