@@ -26,7 +26,7 @@ form.addEventListener('submit', async (event) => {
         } else {
             P.value = "";
             name2.value = "";
-            alert("Fehler beim übertragen der Daten, bitte probieren Sie es erneut!");
+            alert("Error: [503] Fehler bei der Datenübertragung, bitte probieren sie es erneut!");
             count++;
         }
     }
