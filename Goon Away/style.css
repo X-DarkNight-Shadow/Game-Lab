@@ -27,7 +27,22 @@ aside.right{
 }
 
 aside.right .center button{
+    background-color: white;
     width: 150px;
     height: 100px;
     border-radius: 30px;
+    border: 0;
+    box-shadow: 0px 0px 10px white;
+    transition: all 0.5s;
+    transition: transform 0.5s;
+    font-weight: bold;
+}
+
+aside.right .center button:hover{
+    transform: rotateZ(360deg);
+}
+
+aside.right .center button:active{
+    transition: transform 0.1s;
+    transform: scale(0.9);
 }
