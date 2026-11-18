@@ -1,5 +1,7 @@
 * {
     transition: all 0.5s;
+    scrollbar-color: white transparent;
+    scrollbar-width: thin;
 }
 
 body {
@@ -22,13 +24,74 @@ aside.left {
     flex-direction: column;
 }
 
-aside.left .shop-background {
-    background-color: rgb(255, 255, 255);
+aside.left .Upgrades-background {
+    background-color: rgba(0, 0, 0, 0.8);
     width: 50%;
     height: 80%;
     border-radius: 20px;
     box-shadow: 0px 0px 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
 }
+
+aside.left .Upgrades-background .Upgrades{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+aside.left .Upgrades-background .Upgrades .Upgrade{
+    width: 90%;
+    padding: 10px;
+    height: 150px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+aside.left .Upgrades-background .Upgrades .Upgrade:hover{
+    box-shadow: 0px 0px 10px white;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+aside.left .Upgrades-background .Upgrades .Upgrade .Upgrade-Button{
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+}
+
+aside.left .Upgrades-background .Upgrades .Upgrade .Upgrade-Button:hover{
+    box-shadow: 0px 0px 10px white;
+}
+
+aside.left .Upgrades-background .Upgrades .Upgrade:hover .Upgrade-Button{
+    transform: 
+        translateX(-10px)
+        scale(1.1);
+}
+
+aside.left .Upgrades-background .Upgrades .Upgrade .Upgrade-Button:active{
+    transform: scale(0.9);
+}
+
 
 aside.right {
     float: right;
@@ -54,6 +117,7 @@ aside.right #Pump-Button {
 
 aside.right #Pump-Button:hover {
     transform: rotateZ(360deg);
+    color: rgb(0, 255, 162);
 }
 
 aside.right #Pump-Button:active {
